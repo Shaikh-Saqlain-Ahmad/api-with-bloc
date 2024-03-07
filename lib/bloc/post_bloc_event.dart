@@ -1,8 +1,8 @@
-part of 'post_bloc_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-sealed class PostBlocEvent extends Equatable {
-  const PostBlocEvent();
-
+abstract class PostBlocEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
+
+class PostFetched extends PostBlocEvent {}
